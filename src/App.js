@@ -14,14 +14,31 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Menu
-      href={{
-        home: '/',
-        account: '/account',
-        shop: '/shop',
-        categories: '/categories',
-        about: '/about',
-        contact: '/contact'
-      }}/>
+      menuData={[
+        {zIndex: "6",
+        name: "Home",
+        path: "/home"
+        },
+        {zIndex: "5",
+        name: "Account",
+        path: "/account"
+        },
+        {zIndex: "4",
+        name: "Shop",
+        path: "/shop"
+        },
+        {zIndex: "3",
+        name: "Categories",
+        path: "/categories"
+        },
+        {zIndex: "2",
+        name: "About",
+        path: "/about"
+        },
+        {zIndex: "1",
+        name: "Contact",
+        path: "/contact"
+        }]}/>
 
         <Routes>
           <Route path="*" element={<Home/>}/>
