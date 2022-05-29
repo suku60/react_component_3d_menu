@@ -1,0 +1,40 @@
+.box_menu {
+
+    position: absolute;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100%;
+}
+
+ul {
+    position: relative;
+    
+    transform: skewY(-10deg);
+}
+
+li {
+    cursor: pointer;
+}
+
+ul li {
+    background-color: red;
+    color: whitesmoke;
+
+    list-style: none;
+    padding: 1em;
+    
+    width: 13em;
+    
+    position: relative;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
