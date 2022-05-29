@@ -6,18 +6,34 @@ const Menu = (props) => {
 
     let navigate = useNavigate();
 
-    console.log(props)
-
 
   return (
     <div className='box_menu'>
             <ul>
-                <li onClick={()=>{navigate(props.href?.home)}}>Home</li>
-                <li onClick={()=>{navigate(props.href?.account)}}>Account</li>
-                <li onClick={()=>{navigate(props.href?.shop)}}>Shop</li>
-                <li onClick={()=>{navigate(props.href?.categories)}}>Categories</li>
-                <li onClick={()=>{navigate(props.href?.about)}}>About</li>
-                <li onClick={()=>{navigate(props.href?.Contact)}}>Contact</li>
+                <li style={{zIndex: "6"}}
+                onClick={()=>{navigate(props.href?.home)}}>
+                  <p className='li_text'>Home</p>
+                </li>
+                <li style={{zIndex: "5"}}
+                onClick={()=>{navigate(props.href?.account)}}>
+                  <p className='li_text'>Account</p>
+                </li>
+                <li style={{zIndex: 4}}
+                onClick={()=>{navigate(props.href?.shop)}}>
+                  <p className='li_text'>Shop</p>
+                </li>
+                <li style={{zIndex: 3}}
+                onClick={()=>{navigate(props.href?.categories)}}>
+                  <p className='li_text'>Categories</p>
+                </li>
+                <li style={{zIndex: 2}}
+                onClick={()=>{navigate(props.href?.about)}}>
+                  <p className='li_text'>About</p>
+                </li>
+                <li style={{zIndex: 1}}
+                onClick={()=>{navigate(props.href?.contact)}}>
+                  <p className='li_text'>Contact</p>
+                </li>
             </ul>
         
     </div>
